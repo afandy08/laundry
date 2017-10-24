@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="585.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="laundry.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="64.0" layoutY="46.0" text="Data Isian Laundry">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="89.0" text="Nama" />
+      <Label layoutX="32.0" layoutY="129.0" text="Alamat" />
+      <Label layoutX="30.0" layoutY="166.0" text="Berat" />
+      <Label layoutX="30.0" layoutY="198.0" text="Nomer" />
+      <Label layoutX="28.0" layoutY="240.0" text="Pilihan Paket" />
+      <Label layoutX="30.0" layoutY="287.0" text="Tanggal" />
+      <TextField fx:id="nama" layoutX="98.0" layoutY="85.0" />
+      <TextField fx:id="alamat" layoutX="98.0" layoutY="125.0" />
+      <TextField fx:id="berat" layoutX="98.0" layoutY="162.0" />
+      <TextField fx:id="nomer" layoutX="98.0" layoutY="194.0" />
+      <RadioButton fx:id="ck" layoutX="117.0" layoutY="240.0" mnemonicParsing="false" text="CK" />
+      <RadioButton fx:id="cks" layoutX="173.0" layoutY="240.0" mnemonicParsing="false" text="CKS" />
+      <RadioButton fx:id="s" layoutX="247.0" layoutY="240.0" mnemonicParsing="false" text="S" />
+      <TextField fx:id="tanggal" layoutX="99.0" layoutY="275.0" />
+      <Button fx:id="buttonhapus" layoutX="70.0" layoutY="346.0" mnemonicParsing="false" onAction="#Hapus" text="HAPUS" />
+      <Button fx:id="oke" layoutX="221.0" layoutY="346.0" mnemonicParsing="false" onAction="#proses" text="OK" />
+      <TextArea fx:id="hasil" layoutX="61.0" layoutY="385.0" prefHeight="142.0" prefWidth="310.0" />
+    </children>
+</AnchorPane>
